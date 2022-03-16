@@ -13,6 +13,6 @@ thead {
   color: white;
 }
 
-tr:nth-child(even) {
+tbody tr:nth-child(odd) {
   background-color: lightgrey;
 }

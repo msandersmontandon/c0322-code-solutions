@@ -16,27 +16,31 @@ img {
   width: 100%;
 }
 
-/* .column-full {
+.column-full {
+  width: 100%;
+}
 
-} */
-
-/* .column .column-third {
+.column-thirty-five {
   width: 35%;
-} */
+}
 
-.column-text-1 {
+.column-thirty {
   /* flex-basis: 50%; */
 
   /* flex-grow: 2.25; */
   width: 30%;
 }
 
-.column-text-2 {
+.column-twenty-five {
+  width: 25%;
+}
+
+.column-sixty-one {
   width: 61%;
 
   /* align-items: stretch; */
 }
 
-.column-text-3 {
+.column-fifty-nine {
   width: 59%;
 }

@@ -1,0 +1,42 @@
+.container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+
+  /* align-items: stretch; */
+
+  /* height: 200px; */
+}
+
+img {
+  width: 100%;
+}
+
+/* .column-full {
+
+} */
+
+/* .column .column-third {
+  width: 35%;
+} */
+
+.column-text-1 {
+  /* flex-basis: 50%; */
+
+  /* flex-grow: 2.25; */
+  width: 30%;
+}
+
+.column-text-2 {
+  width: 61%;
+
+  /* align-items: stretch; */
+}
+
+.column-text-3 {
+  width: 59%;
+}

@@ -1,0 +1,46 @@
+.container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+
+  /* align-items: stretch; */
+
+  /* height: 200px; */
+}
+
+img {
+  width: 100%;
+}
+
+.column-full {
+  width: 100%;
+}
+
+.column-thirty-five {
+  width: 35%;
+}
+
+.column-thirty {
+  /* flex-basis: 50%; */
+
+  /* flex-grow: 2.25; */
+  width: 30%;
+}
+
+.column-twenty-five {
+  width: 25%;
+}
+
+.column-sixty-one {
+  width: 61%;
+
+  /* align-items: stretch; */
+}
+
+.column-thirty-nine {
+  width: 39%;
+}

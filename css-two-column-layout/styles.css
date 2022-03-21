@@ -19,9 +19,9 @@
   flex-basis: 75%;
 }
 
-/* .column-half {
-  flex-basis: 50%;
-} */
+.column-forty-five {
+  flex-basis: 45%;
+}
 
 .column-one-quarter {
   flex-basis: 25%;
@@ -78,9 +78,9 @@
   background-color: white;
 }
 
-.info-section {
+/* .info-section {
   flex-basis: 45%;
-}
+} */
 
 .justify-between {
   justify-content: space-between;

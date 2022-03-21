@@ -1,0 +1,92 @@
+.contaniner {
+  width: 100px;
+}
+
+.row {
+  display: flex;
+}
+
+.column-one-tenth {
+  flex-basis: 10%;
+}
+
+.column-ninety {
+  flex-basis: 86.2%;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.margin-93 {
+  margin: 0 11%;
+}
+
+.background-indigo {
+  background-color: #244264;
+}
+
+.background-davys-grey {
+  background-color: #515250;
+}
+
+.background-clear {
+  background-color: #fafafa;
+}
+
+.background-hero {
+  background: linear-gradient(rgb(0 0 0 / 30%), rgb(0 0 0 / 30%)), url("images/hero.jpg");
+  opacity: 0.84;
+  background-repeat: no-repeat;
+  background-size: 1130px;
+  width: 1130px;
+  height: 558px;
+}
+
+.hero-text {
+  margin-left: 80px;
+  margin-top: 90px;
+}
+
+.hero-text > h1 {
+  font-size: 2.24em;
+  line-height: 1.3em;
+}
+
+.font-tiempos-headline {
+  font-family: "Tiempos Headline", serif;
+}
+
+.font-avenir {
+  font-family: Avenir, sans-serif;
+}
+
+.font-black-coral {
+  color: #6e6e6e;
+}
+
+.font-platinum {
+  color: #e7e7e6;
+}
+
+.font-gray {
+  color: #b8b8b8;
+}
+
+.font-white {
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.font-body {
+  font-size: 17px;
+  line-height: 28px;
+}

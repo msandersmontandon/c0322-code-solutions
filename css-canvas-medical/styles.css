@@ -10,15 +10,70 @@
   flex-basis: 10%;
 }
 
+.column-half {
+  flex-basis: 50%;
+}
+
+.canvas-logo {
+  width: 147px;
+  margin: 26px 93px;
+}
+
+.header-button {
+  display: inline-block;
+  padding: 9px 14px;
+  margin: 16px 0;
+}
+
+.header-button:hover {
+  color: #e7e7e6;
+  background-color: #244264;
+  border-radius: 4px;
+}
+
+.product {
+  position: relative;
+  right: 45px;
+}
+
+.implementation {
+  position: relative;
+  right: 57px;
+}
+
+.about-us {
+  position: relative;
+  right: 26px;
+}
+
+.blog {
+  position: relative;
+  right: 26px;
+}
+
+.contact-us {
+  position: relative;
+  right: 75px;
+}
+
 .column-ninety {
   flex-basis: 86.2%;
+}
+
+.header-height {
+  height: 80px;
+  border-bottom: 1px solid #b8b8b8;
 }
 
 .justify-center {
   justify-content: center;
 }
 
-.align-center {
+.align-item-center {
+  align-items: center;
+}
+
+.align-text-center {
   text-align: center;
 }
 
@@ -40,11 +95,14 @@
 
 .background-hero {
   background: linear-gradient(rgb(0 0 0 / 30%), rgb(0 0 0 / 30%)), url("images/hero.jpg");
-  opacity: 0.84;
+
+  /* opacity: 0.84; */
   background-repeat: no-repeat;
   background-size: 1130px;
   width: 1130px;
   height: 558px;
+  margin-top: 91px;
+  margin-bottom: 91px;
 }
 
 .hero-text {
@@ -89,4 +147,13 @@ a {
 .font-body {
   font-size: 17px;
   line-height: 28px;
+}
+
+.get-started-button {
+  display: inline-block;
+  color: #e7e7e6;
+  background-color: #244264;
+  width: 205px;
+  height: 59px;
+  border-radius: 5px;
 }

@@ -1,5 +1,5 @@
 .contaniner {
-  width: 100px;
+  width: 100%;
 }
 
 .row {
@@ -21,8 +21,10 @@
 
 .header-button {
   display: inline-block;
-  padding: 9px 14px;
+  padding: 9px 16px;
   margin: 16px 0;
+  font-size: 0.96em;
+  font-weight: 500;
 }
 
 .header-button:hover {
@@ -33,17 +35,17 @@
 
 .product {
   position: relative;
-  right: 45px;
+  right: 34px;
 }
 
 .implementation {
   position: relative;
-  right: 57px;
+  right: 49px;
 }
 
 .about-us {
   position: relative;
-  right: 26px;
+  right: 25px;
 }
 
 .blog {
@@ -61,8 +63,8 @@
 }
 
 .header-height {
-  height: 80px;
-  border-bottom: 1px solid #b8b8b8;
+  height: 79px;
+  border-bottom: 1px solid #b8b8b850;
 }
 
 .justify-center {
@@ -102,18 +104,24 @@
   background-size: 1130px;
   width: 1130px;
   height: 558px;
-  margin-top: 71px;
+  margin-top: 70px;
   margin-bottom: 91px;
 }
 
 .hero-text {
   margin-left: 80px;
-  margin-top: 90px;
+  margin-top: 78px;
 }
 
 .hero-text > h1 {
-  font-size: 2.24em;
+  font-size: 2.3em;
   line-height: 1.3em;
+  font-weight: normal;
+  margin-bottom: 3px;
+}
+
+.hero-text > p {
+  font-size: 0.96em;
 }
 
 .font-tiempos-headline {

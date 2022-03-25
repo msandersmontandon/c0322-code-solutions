@@ -18,6 +18,14 @@
   flex-basis: 50%;
 }
 
+.column-44-4 {
+  flex-basis: 44.4%;
+}
+
+.column-20 {
+  flex-basis: 20%;
+}
+
 .canvas-logo {
   width: 147px;
   margin: 26px 93px;
@@ -184,11 +192,11 @@ a {
 
 .clinicians-header > p {
   font-size: 0.96em;
-  margin-bottom: 69px;
+  margin-bottom: 70px;
 }
 
 .clinicians-list {
-  padding-bottom: 103px;
+  padding-bottom: 104px;
 }
 
 .clinicians-list > div {
@@ -196,15 +204,74 @@ a {
 }
 
 .clinicians-list > div > h3 {
+  font-size: 1.21em;
   font-weight: normal;
   text-align: center;
 }
 
 .ready-schedule {
-  padding-top: 50px;
+  padding-top: 31px;
+  padding-bottom: 25px;
+  justify-content: space-between;
+}
+
+.ready-schedule > div > h2 {
+  font-size: 1.85em;
+  font-weight: normal;
+  margin-bottom: 22px;
+  position: relative;
+  right: 51px;
+}
+
+.ready-schedule > div > p {
+  font-size: 0.965em;
+  position: relative;
+  right: 51px;
 }
 
 .ready-schedule > div > a.get-started-button {
   position: relative;
   left: 360px;
+  top: 19px;
+}
+
+.info-canvas {
+  padding-top: 94px;
+  padding-left: 93px;
+  padding-bottom: 117px;
+}
+
+.info-canvas > div > div > .canvas-logo {
+  margin-left: 0;
+  margin-bottom: 33px;
+}
+
+.info-canvas > div > p {
+  font-size: 0.97em;
+  line-height: 0.718em;
+}
+
+.info-canvas > div > h3 {
+  font-weight: normal;
+  font-size: 1.21em;
+  line-height: 1.25em;
+}
+
+.info-canvas > .column-20 {
+  margin-left: 45px;
+  position: relative;
+  right: 6px;
+  top: 5px;
+}
+
+.foot-terms {
+  height: 139px;
+  align-items: center;
+  padding-left: 70px;
+}
+
+.foot-terms > div > h3 {
+  font-size: 1.1em;
+  font-weight: 500;
+  margin: 21px;
 }

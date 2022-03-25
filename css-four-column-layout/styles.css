@@ -1,0 +1,55 @@
+.container {
+  width: 1525px;
+  margin: 0 auto;
+  font-family: Barlow, sans-serif;
+}
+
+.row {
+  display: flex;
+}
+
+.column-full {
+  flex-basis: 100%;
+}
+
+.column-one-quarter {
+  flex-basis: 25%;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.screen {
+  width: 342px;
+  margin: 0 auto;
+}
+
+.screen > img {
+  width: 100%;
+}
+
+.icon {
+  width: 76px;
+  margin: 0 auto;
+}
+
+.icon > img {
+  width: 100%;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 1.17em;
+}
+
+section > p {
+  margin-top: 34px;
+}

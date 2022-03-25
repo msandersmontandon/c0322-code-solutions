@@ -199,3 +199,12 @@ a {
   font-weight: normal;
   text-align: center;
 }
+
+.ready-schedule {
+  padding-top: 50px;
+}
+
+.ready-schedule > div > a.get-started-button {
+  position: relative;
+  left: 360px;
+}

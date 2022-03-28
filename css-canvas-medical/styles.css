@@ -1,0 +1,279 @@
+.contaniner {
+  width: 100%;
+}
+
+.row {
+  display: flex;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.column-one-tenth {
+  flex-basis: 10%;
+}
+
+.column-half {
+  flex-basis: 50%;
+}
+
+/* .column-44-4 {
+  flex-basis: 44.4%;
+} */
+
+.column-20 {
+  flex-basis: 20%;
+}
+
+.canvas-logo {
+  width: 147px;
+  margin: 26px 93px;
+}
+
+.header-button {
+  display: inline-block;
+  padding: 9px 16px;
+  margin: 16px 0;
+  font-size: 0.96em;
+  font-weight: 500;
+}
+
+.header-button:hover {
+  color: #e7e7e6;
+  background-color: #244264;
+  border-radius: 4px;
+}
+
+.product {
+  position: relative;
+  right: 34px;
+}
+
+.implementation {
+  position: relative;
+  right: 49px;
+}
+
+.about-us {
+  position: relative;
+  right: 23px;
+}
+
+.blog {
+  position: relative;
+  right: 26px;
+}
+
+.contact-us {
+  position: relative;
+  right: 75px;
+}
+
+.column-ninety {
+  flex-basis: 86.2%;
+}
+
+.header-height {
+  height: 79px;
+  border-bottom: 1px solid #b8b8b850;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-item-center {
+  align-items: center;
+}
+
+.align-text-center {
+  text-align: center;
+}
+
+.margin-93 {
+  margin: 0 11%;
+}
+
+.background-indigo {
+  background-color: #244264;
+}
+
+.background-davys-grey {
+  background-color: #515250;
+}
+
+.background-clear {
+  background-color: #fafafa;
+}
+
+.background-hero {
+  background: linear-gradient(rgb(90 90 90 / 40%), rgb(90 90 90 / 40%)), url("images/hero.jpg");
+  background-position: center;
+
+  /* opacity: 0.84; */
+  background-repeat: no-repeat;
+  background-size: 1130px;
+  width: 1130px;
+  height: 558px;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+.hero-text {
+  margin-left: 80px;
+  margin-top: 78px;
+}
+
+.hero-text > h1 {
+  font-size: 2.3em;
+  line-height: 1.3em;
+  font-weight: normal;
+  margin-bottom: 3px;
+}
+
+.hero-text > p {
+  font-size: 0.96em;
+  margin-bottom: 33px;
+}
+
+.font-tiempos-headline {
+  font-family: "Tiempos Headline", serif;
+}
+
+.font-avenir {
+  font-family: Avenir, sans-serif;
+}
+
+.font-black-coral {
+  color: #6e6e6e;
+}
+
+.font-platinum {
+  color: #e7e7e6;
+}
+
+.font-gray {
+  color: #b8b8b8;
+}
+
+.font-white {
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.font-body {
+  font-size: 17px;
+  line-height: 28px;
+}
+
+.get-started-button {
+  display: inline-block;
+  color: #e7e7e6;
+  background-color: #244264;
+  width: 205px;
+  height: 58px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1.2em;
+  padding-top: 17px;
+}
+
+.clinicians-header > h2 {
+  font-size: 1.8em;
+  letter-spacing: 0.01em;
+  margin-top: 75px;
+  margin-bottom: 21px;
+}
+
+.clinicians-header > p {
+  font-size: 0.96em;
+  margin-bottom: 70px;
+}
+
+.clinicians-list {
+  padding-left: 75px;
+  padding-right: 75px;
+  padding-bottom: 104px;
+}
+
+.clinicians-list > div {
+  height: 59px;
+}
+
+.clinicians-list > div > h3 {
+  font-size: 1.21em;
+  font-weight: normal;
+  text-align: center;
+}
+
+.ready-schedule {
+  padding-top: 31px;
+  padding-bottom: 25px;
+  justify-content: space-between;
+}
+
+.ready-schedule > div > h2 {
+  font-size: 1.85em;
+  font-weight: normal;
+  margin-bottom: 22px;
+  position: relative;
+  right: 51px;
+}
+
+.ready-schedule > div > p {
+  font-size: 0.965em;
+  position: relative;
+  right: 51px;
+}
+
+.ready-schedule > div > a.get-started-button {
+  position: relative;
+  left: 360px;
+  top: 19px;
+}
+
+.info-canvas {
+  padding-top: 94px;
+  padding-left: 93px;
+  padding-bottom: 117px;
+}
+
+.info-canvas > div > div > .canvas-logo {
+  margin-left: 0;
+  margin-bottom: 33px;
+}
+
+.info-canvas > div > p {
+  font-size: 0.97em;
+  line-height: 0.718em;
+}
+
+.info-canvas > div > h3 {
+  font-weight: normal;
+  font-size: 1.21em;
+  line-height: 1.25em;
+}
+
+.info-canvas > .column-20 {
+  margin-left: 45px;
+  position: relative;
+  right: 75px;
+  top: 5px;
+}
+
+.foot-terms {
+  height: 139px;
+  align-items: center;
+  padding-left: 70px;
+}
+
+.foot-terms > div > h3 {
+  font-size: 1.1em;
+  font-weight: 500;
+  margin: 21px;
+}

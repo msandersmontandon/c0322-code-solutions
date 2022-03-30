@@ -15,16 +15,16 @@ function typingTutor(event) {
       accuracy = (1 - (mistakes / tries)) * 100;
       if (index < $char.length - 1) {
         $char.item(index).className = 'current';
-      } else {
+      }
+      if (index === $char.length) {
         $modal.className = 'modal';
-        $accuracyScore.textContent = 'Accuracy: ' + accuracy + '%';
+        $accuracyScore.textContent = 'Accuracy: ' + accuracy.toFixed(2) + '%';
       }
     } else {
       $char.item(index).className = 'wrong current';
       mistakes++;
       tries++;
       accuracy = (1 - (mistakes / tries)) * 100;
-
     }
     // if (index < $char.length - 2) {
     //   document.addEventListener('keydown', typingTutor);

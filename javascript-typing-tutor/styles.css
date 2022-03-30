@@ -1,8 +1,8 @@
 .container {
-  padding-top: 50vh;
+  padding-top: 44vh;
   text-align: center;
   font-family: Courier, sans-serif;
-  font-size: 1.95em;
+  font-size: 2.5em;
   font-weight: 900;
 }
 
@@ -33,7 +33,7 @@
 
 .modal {
   position: fixed;
-  right: 30vw;
+  right: 20vw;
   bottom: 20vh;
 }
 

@@ -33,6 +33,16 @@
 
 .modal {
   position: fixed;
-  right: 10vw;
+  right: 30vw;
   bottom: 20vh;
+}
+
+.modal > button {
+  border: 0 solid;
+  padding: 4px 8px;
+  border-radius: 4px;
+  background-color: #64ce22;
+  color: rgb(247 247 247);
+  cursor: pointer;
+  font-size: 1.1em;
 }

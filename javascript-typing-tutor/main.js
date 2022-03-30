@@ -7,29 +7,46 @@ var tries = 0;
 var mistakes = 0;
 var accuracy = 0;
 function typingTutor(event) {
-  if (event.key === $char.item(index).textContent) {
-    $char.item(index).className = 'right';
-    index++;
-    $char.item(index).className = 'current';
-  } else {
-    $char.item(index).className = 'wrong current';
-    mistakes++;
-  }
-  tries++;
-  accuracy = 1 - (mistakes / tries);
   if (index < $char.length) {
-    document.addEventListener('keydown', typingTutor);
-  } else {
-    $modal.className = 'modal';
-    $accuracyScore.textContent = 'Accuracy: ' + accuracy + '%';
-    $again.addEventListener('click', playAgain);
+    if (event.key === $char.item(index).textContent) {
+      $char.item(index).className = 'right';
+      index++;
+      tries++;
+      accuracy = (1 - (mistakes / tries)) * 100;
+      if (index < $char.length - 1) {
+        $char.item(index).className = 'current';
+      } else {
+        $modal.className = 'modal';
+        $accuracyScore.textContent = 'Accuracy: ' + accuracy + '%';
+      }
+    } else {
+      $char.item(index).className = 'wrong current';
+      mistakes++;
+      tries++;
+      accuracy = (1 - (mistakes / tries)) * 100;
+
+    }
+    // if (index < $char.length - 2) {
+    //   document.addEventListener('keydown', typingTutor);
+    // }
   }
 }
 function playAgain(event) {
-  // if (event === 'click' || event.key ==='Enter') {
-
-  // }
+  if ($modal.className === 'modal' && (event.type === 'click' || event.key === 'Enter')) {
+    $modal.className = 'modal hide';
+    $char.forEach(function (items) {
+      items.className = '';
+    });
+    index = 0;
+    tries = 0;
+    mistakes = 0;
+    accuracy = 0;
+    $char.item(index).className = 'current';
+    document.addEventListener('keydown', typingTutor);
+  }
 }
 
 $char.item(index).className = 'current';
 document.addEventListener('keydown', typingTutor);
+$again.addEventListener('click', playAgain);
+document.addEventListener('keydown', playAgain);

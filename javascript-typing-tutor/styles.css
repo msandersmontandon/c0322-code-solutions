@@ -1,0 +1,48 @@
+.container {
+  padding-top: 44vh;
+  text-align: center;
+  font-family: Courier, sans-serif;
+  font-size: 2.5em;
+  font-weight: 900;
+}
+
+.right {
+  color: #64ce22;
+}
+
+.wrong {
+  color: #ed462f;
+}
+
+.current {
+  border-bottom: 2px solid black;
+}
+
+.hide {
+  display: none;
+}
+
+/* .modal-background {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(0 0 0 / 80.1%);
+} */
+
+.modal {
+  position: fixed;
+  right: 20vw;
+  bottom: 20vh;
+}
+
+.modal > button {
+  border: 0 solid;
+  padding: 4px 8px;
+  border-radius: 4px;
+  background-color: #64ce22;
+  color: rgb(247 247 247);
+  cursor: pointer;
+  font-size: 1.1em;
+}

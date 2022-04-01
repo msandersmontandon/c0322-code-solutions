@@ -22,6 +22,14 @@ var libraryJson = JSON.stringify(library);
 console.log('libraryJson :', libraryJson);
 console.log('typeof libraryJson :', typeof libraryJson);
 
-var libraryParse = JSON.parse(libraryJson);
-console.log('libraryParse :', libraryParse);
-console.log('typeof libraryParse:', typeof libraryParse);
+// var libraryParse = JSON.parse(libraryJson);
+// console.log('libraryParse :', libraryParse);
+// console.log('typeof libraryParse:', typeof libraryParse);
+
+var studentJson = '{ "id": 12034056, "name": "Matheus Sanders Montandon"}';
+console.log('studentJson :', studentJson);
+console.log('typeo studentJson :', typeof studentJson);
+
+var student = JSON.parse(studentJson);
+console.log('student :', student);
+console.log('typeof student :', typeof student);

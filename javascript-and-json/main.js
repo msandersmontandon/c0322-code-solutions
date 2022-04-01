@@ -28,7 +28,7 @@ console.log('typeof libraryJson :', typeof libraryJson);
 
 var studentJson = '{ "id": 12034056, "name": "Matheus Sanders Montandon"}';
 console.log('studentJson :', studentJson);
-console.log('typeo studentJson :', typeof studentJson);
+console.log('typeof studentJson :', typeof studentJson);
 
 var student = JSON.parse(studentJson);
 console.log('student :', student);

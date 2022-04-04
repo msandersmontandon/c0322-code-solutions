@@ -1,8 +1,16 @@
 /* exported titleCase */
-/* exported caseWord */
-/* exported */
-/* */
-/* */
+
+/** pseudocode for titleCase
+ * the official guidlines for an APA Title Case capitalization is as follow:
+ * a. Capitalize the first word of the title/heading and of any subtitle/subheading;
+ * b. Capitalize all “major” words (nouns, verbs, adjectives, adverbs, and pronouns) in the title/heading, including the second part of hyphenated major words (e.g., Self-Report not Self-report); and
+ * c. Capitalize all words of four letters or more.
+ * which leads to a fourth direction:
+ * d. Only "minor" words of three letters or fewer should be lowercase, which means that only only conjunctions and prepositions that don't fall under a. will be lowrcased.
+ * now, I planned to have roughly 1 function for each of these 4 rules, but it turns out I'll be only exporting the titleCase() function to be tested;
+ * nevertheless, I decided to leave commented out the pieces of thoses function in the code, as they give clues to my decision-making process for this algorithm;
+ * 1. make the function definition for titleCase() with 1 paramether: title;
+ */
 
 function titleCase(title) {
   var lowerCased = title.toLowerCase();
@@ -301,6 +309,6 @@ function titleCase(title) {
     // console.log(currentWord);
     titleCased += currentWord + ' ';
   }
-  titleCased = titleCased.slice(0, titleCased.length - 1);
+  titleCased = titleCased.trimEnd();
   return titleCased;
 }

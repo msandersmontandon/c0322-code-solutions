@@ -8,6 +8,11 @@
  * 5. concataneta the wordsString array with the array at the current index of the wordsArray array, then:
  * 6. assign the result of that expression to the wordsString variable;
  * 7. after the end of that for loop, take the wordsString string to the lower case and assign it to the wordsString variable;
+ * 8. declare the variable palindrome and assign the boolean value of true to it;
+ * 9. use a for loop to iterate through half of the characters of the wordsString string, statrting at the first one;
+ * 10. use an guarded if statement to see if the character at the current index of the wordsString string is different from the character at the simetrical opposit end of the same string;
+ * 11. If any of them are, assign the boolean value of false to the palindrome variable;
+ * 12. after the end of that if statement, and after the end of that for loop, return from the function the value of the palindrome variable;
  */
 
 function isPalindromic(string) {

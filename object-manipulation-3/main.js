@@ -69,8 +69,9 @@ var game = {
     }
   },
   discard: function (currentPlayer) { // a method that will discard the hand of a player
-    for (var h = 0; h < currentPlayer.hand.length; h++) {
-      currentPlayer.hand.pop(this.deck.shift());
+    var currentHandSize = currentPlayer.hand.length;
+    for (var h = 0; h < currentHandSize; h++) {
+      this.deck.push(currentPlayer.hand.pop());
     }
   },
   newRound: function () { // a method that will discard any cards on the players hands, then shuffle the deck and deal new hands. Finally, it'll

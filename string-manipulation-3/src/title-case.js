@@ -50,7 +50,7 @@ function titleCase(title) {
    * 19. assign the string 'API:' to the word variable;
    * 20. assign the boolean value of true to the colon variable;
    * 21. assign the boolean value of true to the dealtWith variable;
-   * 22. after the end of the switch cases, return from the function the value of the word variable;
+   * 22. after the end of the switch cases, return from the function the value of the word variable.
    */
 
   function specialCases(word) {
@@ -86,7 +86,7 @@ function titleCase(title) {
    * 5. assign the boolean value of true to the dealtWith variable;
    * 6. then in the case of matching with any between the strings 'in:', 'the:', 'of:', 'for:', 'to:', 'on:' or 'and:':
    * 7. assign the boolean value of true to the colon variable;
-   * 8. assign the boolean value of true to the dealtWith variable;
+   * 8. assign the boolean value of true to the dealtWith variable.
    */
 
   function exception(word) {
@@ -123,7 +123,7 @@ function titleCase(title) {
    * 45. then use an if statement to check if the word string ends with a colon;
    * 46. if it does, assign the boolean value of true to the colon variable;
    * 47. then after the end of that if statement, assign the boolean value of true to the dealtWith variable;
-   * 48. return from the function the value of the word variable;
+   * 48. return from the function the value of the word variable.
    */
 
   function capitalizeFirst(word) {
@@ -137,6 +137,23 @@ function titleCase(title) {
     dealtWith = true;
     return word;
   }
+
+  /** pseudocode for dashCase
+   * 1. make the function definition for dashCase() with 1 parameter: word;
+   * 2. declare the variable wordsArray and assign to it the array of strings split from the word parameter at the dashes;
+   * 3. declare the variable localWord and assign an empty string to it;
+   * 4. assign an empty string to the word variable;
+   * 5. using a for loop, iterate through the indexes of the wordsArray array;
+   * 6. reassign the boolean value of false to the dealtWith variable;
+   * 7. assign the string at the current index of the wordsArray array to the localWord array;
+   * 8. call the function specialCases() with 1 argument: the localWord variable. Then assign the return value of that function back to the localWord variable;
+   * 9. use an if statement to check if the dealtWith variable is still false;
+   * 10. if it still is, call the function capitalizeFirst() with 1 argument: the localWord variable. Then assign the return value of that function back to the localWord variable;
+   * 11. then after the end of that if statement, concatenate the word string with the localWord string, and then:
+   * 12. concatenate the result of that expression to a dash, and then assign the result of that expression back to the word variable;
+   * 13. then after the end of the for loop, assign the string sliced from the beggining until the second to last character of the word string back to the word variable;
+   * 14. return from the function the value of the word variable.
+   */
 
   function dashCase(word) {
     var wordsArray = word.split('-');

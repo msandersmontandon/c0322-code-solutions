@@ -8,7 +8,7 @@
  * d. Only "minor" words of three letters or fewer should be lowercase, which means that only only conjunctions and prepositions that don't fall under a. will be lowercased.
  */
 
-/** pseudocode for titleCase (part 1/2)
+/** pseudocode for titleCase (part 1/2): variable declarations & function definitions
  * 1. make the function definition for titleCase() with 1 parameter: title;
  * 2. declare the variable lowerCased and assign to it the string value of th title parameter taken to lowercase;
  * 3. declare the variable titleWords and assign to it the array of strings split from the lowersCased string at the empty spaces;
@@ -17,6 +17,11 @@
  * 6. declare the variable capitalLetter and assign an empty string to it;
  * 7. declare the variable titleCased and assign an empty string to it;
  * 8. declare the variabe currentWord and assign an empty string to it;
+ * 9-30. make the function definition for specialCase() with 1 parameter: word;
+ * 31-38. make the function definition for exception() with 1 paramether: word;
+ * 39-48. make the function definition for capitalizeFirst() with 1 parameter: word;
+ * 49-62. make the function definition for dashCase() with 1 parameter: word;
+ * 63-84. follow the instrunction for the pseducode for titleCase (part 2/2)
  */
 
 function titleCase(title) {
@@ -29,7 +34,7 @@ function titleCase(title) {
   var currentWord = '';
 
   /** pseudocode for specialCase
-   * 1. make the function definition for specialCase() qith 1 parameter: word;
+   * 1. make the function definition for specialCase() with 1 parameter: word;
    * 2. usign a switch statement, check the value of the word parameter against the following cases:
    * 3. in the case of matching with the string 'javascript':
    * 4. assign the string 'JavaScript' to the word variable;
@@ -115,15 +120,15 @@ function titleCase(title) {
 
   /** pseudocode for capitalizeFirst
    * 1. make the function definition for capitalizeFirst() with 1 parameter: word
-   * 10. reassign the boolean value of false to the colon variable;
-   * 41. assign the character at the first index of the word parameter to the capitalLetter variable;
-   * 42. assign the rest of the word parameter to the lowerCased variable;
-   * 43. concatenate the capitalLetter string taken to the upper letter with the lowerCased string, and then:
-   * 44. assign the result of that expression to the word variable;
-   * 45. then use an if statement to check if the word string ends with a colon;
-   * 46. if it does, assign the boolean value of true to the colon variable;
-   * 47. then after the end of that if statement, assign the boolean value of true to the dealtWith variable;
-   * 48. return from the function the value of the word variable.
+   * 2. reassign the boolean value of false to the colon variable;
+   * 3. assign the character at the first index of the word parameter to the capitalLetter variable;
+   * 4. assign the rest of the word parameter to the lowerCased variable;
+   * 5. concatenate the capitalLetter string taken to the upper letter with the lowerCased string, and then:
+   * 6. assign the result of that expression to the word variable;
+   * 7. then use an if statement to check if the word string ends with a colon;
+   * 8. if it does, assign the boolean value of true to the colon variable;
+   * 9. then after the end of that if statement, assign the boolean value of true to the dealtWith variable;
+   * 10. return from the function the value of the word variable.
    */
 
   function capitalizeFirst(word) {
@@ -171,6 +176,31 @@ function titleCase(title) {
     word = word.slice(0, word.length - 1);
     return word;
   }
+
+  /** pseudocode fortitleCase (part 2/2): functionality instructions
+   * 1. use a for loop to iterate through the indexes of the titleWords array;
+   * 2. then assign the string at the current index of the titleWords array to the currentWord variable;
+   * 3. reassign the boolean value of false to the dealtWith variable;
+   * 4. first use an if statement to check if the string value at the currentWord includes a dash;
+   * 5. if it does, call the dashCase() function with 1 argument: the value of the currentWord variable. Then:
+   * 6. assign the return value of that function back to the currentWord variable;
+   * 7. second, after the end of the first if statement, use an if statement to check if the boolean value of the dealtWith variable is still false;
+   * 8. if it still is, call the specialCase() function with 1 argument: the value of the currentWord variable. Then:
+   * 9. assign the return value of that function back to the currentWord variable;
+   * 10. third, after the end of the second if statement, use an if statement to check if the current index is already past the first index;
+   * 11. fourth, if it already is, use an if statement to check if both the boolean value of the colon variable is true & if the boolean value of the dealtWith variable is still false;
+   * 12. if both of those are the case, call the capitalizeFirst() function with 1 argument: the value of the currentWord variable. Then:
+   * 13. assign the return value of that function back to the currentWord variable;
+   * 14. fifth, after the end of the fourth if statement, use an if statement to check if the boolean value of the dealtWith variable is still false;
+   * 15. if it still is, call the exception() function with 1 argument; the value of the currentWord variable.
+   * 16. sixth, after the end of both the fifth and the third if statement, use an if statement to check if the boolean value of the dealtWith variable is still false;
+   * 17. if it still is, call the capitalizeFirst() function with 1 argument: the value of the currentWord variable. Then:
+   * 18. assign the return value of that function back to the currentWord variable;
+   * 19. then, after the end of the sixth if statement, concatenate the string value of the titleCased variable with the string value of the currentWord variable, then:
+   * 20. concatenate the result of that expression with an empty space, and then assign the result of that expression to the titleCased variable;
+   * 21. then, after the end of that for loop, trim the end of the titleCased string and assign the resulting string back to the titleCased variable;
+   * 22. return from the function the value of the titleCased variabale.
+   */
 
   for (var i = 0; i < titleWords.length; i++) {
     currentWord = titleWords[i];

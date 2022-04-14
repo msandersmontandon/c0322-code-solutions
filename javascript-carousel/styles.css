@@ -32,12 +32,15 @@
 
 .image {
   height: calc(95.5vh - 4rem);
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .image img {
   object-fit: contain;
   max-height: 100%;
+  max-width: 100%;
 }
 
 .shortcut {
@@ -62,22 +65,24 @@ button.selected {
 
 .arrow {
   line-height: 100%;
+  align-items: center;
+  display: flex;
+  max-width: 100%;
 }
 
 .left {
-  text-align: left;
+  justify-content: left;
   padding-left: 4rem;
 }
 
 .right {
-  text-align: right;
+  justify-content: right;
   padding-right: 4rem;
 }
 
 .arrow i {
+  max-width: 100%;
   cursor: pointer;
-  height: 0;
-  padding: 150% 0;
   vertical-align: middle;
   font-size: 4rem;
 }

@@ -3,15 +3,6 @@ const $flashImage = document.querySelector('#flash-image');
 const $jokeForm = document.querySelector('#joke-form');
 
 const jokester = {
-  renderJokePhrase: function (phrase) {
-    const $phrase = document.createElement('h4');
-    $phrase.textContent = phrase;
-    $phrase.className = 'fade-in text-center';
-    return $phrase;
-  },
-  appendJokePhrase: function ($phrase) {
-    $jokeContainer.append($phrase);
-  },
   tellJoke: function (setup, punchline) {
     $jokeForm.classList.add('d-none');
     const $introStatement = this.renderJokePhrase('Hey Flash...');
@@ -25,6 +16,15 @@ const jokester = {
         flash.laugh();
       }, 2000);
     }, 2000);
+  },
+  renderJokePhrase: function (phrase) {
+    const $phrase = document.createElement('h4');
+    $phrase.textContent = phrase;
+    $phrase.className = 'fade-in text-center';
+    return $phrase;
+  },
+  appendJokePhrase: function ($phrase) {
+    $jokeContainer.append($phrase);
   }
 };
 

@@ -1,12 +1,12 @@
 function reduce(array, reducer, initialValue) {
-  let result;
-  if (initialValue !== undefined) {
+  let result = array[0];
+  let index = 1;
+  if (arguments.length === 3) {
     result = initialValue;
-  } else {
-    result = array.shift();
+    index = 0;
   }
-  for (const element of array) {
-    result = reducer(result, element);
+  for (; index < array.length; index++) {
+    result = reducer(result, array[index]);
   }
   return result;
 }

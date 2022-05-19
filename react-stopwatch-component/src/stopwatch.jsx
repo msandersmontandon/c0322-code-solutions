@@ -27,14 +27,14 @@ export class Stopwatch extends React.Component {
   }
 
   resetClock() {
-    this.setState({ seconds: 0 });
+    if (!this.state.clockRunning) this.setState({ seconds: 0 });
   }
 
   render() {
     return (
       <div className='row'>
         <div className='column'>
-          <div className='circle' onClick={ !this.state.clockRunning ? this.resetClock : ''}>
+          <div className='circle' onClick={this.resetClock}>
             { this.state.seconds }
           </div>
         </div>

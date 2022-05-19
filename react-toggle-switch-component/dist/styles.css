@@ -1,0 +1,41 @@
+.row {
+  display: flex;
+}
+
+.column {
+  flex-basis: 1;
+  display: flex;
+}
+
+p {
+  margin: 0 5px;
+}
+
+.on,
+.off {
+  width: 30px;
+  border: 1px solid black;
+  border-radius: 8px;
+  position: relative;
+}
+
+.off {
+  background-color: #e3e3e3;
+}
+
+.on {
+  background-color: #6aaa4e;
+}
+
+.toggle {
+  border: 1px solid black;
+  border-radius: 50%;
+  width: 14px;
+  height: 14px;
+  background-color: ivory;
+  position: absolute;
+}
+
+.on .toggle {
+  right: 0;
+}

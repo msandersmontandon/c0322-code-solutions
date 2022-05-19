@@ -1,0 +1,34 @@
+.coldest {
+  color: white;
+  background-color: black;
+}
+
+.colder {
+  color: white;
+  background-color: #321576;
+}
+
+.cold {
+  color: white;
+  background-color: #674da9;
+}
+
+.warm {
+  color: white;
+  background-color: #e16666;
+}
+
+.warmer {
+  color: black;
+  background-color: #f6b36b;
+}
+
+.hot {
+  color: black;
+  background-color: #ff0;
+}
+
+.hottest {
+  color: black;
+  background-color: white;
+}

@@ -17,6 +17,16 @@ export class AppDrawer extends React.Component {
   }
 
   render() {
-    return ('');
+    return (
+      <div>
+        <div className='modal'>
+          <div></div>
+        </div>
+        <div className='main'>
+          <i className='fas fa-bars'></i>
+          <img className='background-image' src='https://i.pinimg.com/474x/e0/21/8e/e0218ecf340fd7c1aa2ec41d08973549.jpg'></img>
+        </div>
+      </div>
+    );
   }
 }

@@ -1,0 +1,28 @@
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fas {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+.background-image {
+  animation-timing-function: linear;
+  animation-duration: 180s;
+  animation-name: rotate;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(1turn);
+  }
+}
